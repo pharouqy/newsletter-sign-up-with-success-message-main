@@ -36,13 +36,24 @@
             type="email"
             name="email"
             id="email"
+            class="email"
             placeholder="email@company.com"
           />
           <input type="submit" value="Subscribe to monthly newsletter" />
         </form>
       </section>
       <aside>
-        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" />
+        <img
+          src="./assets/images/illustration-sign-up-desktop.svg"
+          srcset="
+            ./assets/images/illustration-sign-up-mobile.svg   370w,
+            ./assets/images/illustration-sign-up-desktop.svg 1200w
+          "
+          sizes="(max-width: 375px) 370px,
+                (max-width: 1200px) 100vw,
+                 1200px"
+          alt="Illustration de sign-up"
+        />
       </aside>
     </main>
     <section>
