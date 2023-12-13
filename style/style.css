@@ -1,0 +1,140 @@
+* {
+  max-width: 1440px;
+  margin: auto 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(234, 29%, 20%);
+}
+
+main {
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  padding: 15px;
+  width: 60%;
+  border-radius: 15px;
+}
+
+main > section {
+  padding: 15px;
+  width: 90%;
+}
+
+ul {
+  padding: 0px;
+}
+
+ul > li {
+  background: url(../assets//images/icon-list.svg) no-repeat left center;
+  padding: 12px 10px 10px 30px;
+  list-style: none;
+  margin: 0;
+  color: hsl(235, 18%, 26%);
+  font-size: 0.6rem;
+}
+
+main > aside > img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+main > section,
+main > section > form,
+main > aside {
+  background-color: hsl(0, 0%, 100%);
+}
+
+main > section > h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+}
+
+main > section > p {
+  color: hsl(235, 18%, 26%);
+  font-size: 0.6rem;
+  padding: 15px 0;
+}
+
+label {
+  display: block;
+  font-size: 0.5rem;
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  padding: 20px 0 5px 0;
+}
+
+input#email {
+  border: 1px solid hsl(231, 7%, 60%);
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 0.6rem;
+  width: 100%;
+  color: hsl(234, 29%, 20%);
+}
+
+input[type="submit"],
+button {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(234, 29%, 20%);
+  font-size: 0.5rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  margin: 20px 0px;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:active,
+button:hover,
+button:active {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 97, 86, 1) 0%,
+    rgba(255, 89, 105, 1) 53%,
+    rgba(252, 148, 70, 1) 93%
+  );
+}
+
+body > section:nth-child(2) {
+  display: none;
+  flex-direction: column;
+  padding: 15px 30px;
+  width: 35%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+}
+
+section > div > img {
+  width: 50px;
+}
+
+section > h2 {
+  color: hsl(234, 29%, 20%);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+section > p {
+  color: hsl(235, 18%, 26%);
+  font-size: 0.6rem;
+  padding: 5px 0;
+}
+
+p > span {
+  font-size: 0.6rem;
+  font-weight: 700;
+}
