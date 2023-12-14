@@ -43,17 +43,23 @@
         </form>
       </section>
       <aside>
-        <img
-          src="./assets/images/illustration-sign-up-mobile.webp"
-          srcset="
-            ./assets/images/illustration-sign-up-mobile.webp 375w,
-            ./assets/images/illustration-sign-up-desktop.webp 1200w
-          "
-          sizes="(max-width: 375px) 375px,
-                (max-width: 1200px) 100vw,
-                 1200px"
-          alt="Illustration de sign-up"
-        />
+        <picture>
+          <!-- Pour les écrans larges (desktop) -->
+          <source
+            media="(min-width: 768px)"
+            srcset="./assets/images/illustration-sign-up-desktop.svg"
+          />
+          <!-- Pour les écrans étroits (mobile) -->
+          <source
+            media="(max-width: 767px)"
+            srcset="./assets/images/illustration-sign-up-mobile.svg"
+          />
+          <!-- Image par défaut (s'affiche si les sources ci-dessus ne correspondent pas) -->
+          <img
+            src="./assets/images/illustration-sign-up-desktop.svg"
+            alt="Illustration de sign-up"
+          />
+        </picture>
       </aside>
     </main>
     <section>

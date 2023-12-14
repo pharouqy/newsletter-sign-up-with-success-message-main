@@ -41,7 +41,7 @@ ul > li {
   font-size: 0.6rem;
 }
 
-main > aside > img {
+main > aside > picture > img {
   width: 100%;
   border-radius: 15px;
 }
@@ -162,7 +162,7 @@ label > span {
     width: 100%;
     flex-direction: column-reverse;
   }
-  main > aside > img {
+  main > aside > picture > img {
     width: 100%;
     position: relative;
     top: -25px;
