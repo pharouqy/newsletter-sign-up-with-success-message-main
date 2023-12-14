@@ -2,6 +2,7 @@ const email = document.getElementById("email");
 const thanks = document.querySelector("section:nth-child(2)");
 const main = document.querySelector("main");
 const input = document.querySelector("input[type='email']");
+const span = document.querySelector("p > span");
 
 checkEmail(email);
 
@@ -16,6 +17,7 @@ function checkEmail(email) {
     if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
       main.style.display = "none";
       thanks.style.display = "flex";
+      span.textContent = email.value;
     } else {
       label.insertAdjacentHTML(
         "beforeend",
