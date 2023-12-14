@@ -155,7 +155,7 @@ label > span {
   width: 100%;
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 425px) {
   main {
     background-color: hsl(0, 0%, 100%);
     padding: 0;
